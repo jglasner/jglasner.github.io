@@ -1,27 +1,73 @@
-# Os
+# SO System - Front-End
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/jglasner/jglasner.github.io/blob/master/LICENSE) 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+# Sobre o projeto
 
-## Development server
+https://jglasner.github.io/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+OS System é uma aplicação full stack web construída durante o curso Full Stack Developer, mistrador pelo professor Valdir Cezar. [Udemy](https://www.udemy.com/course/curso-full-stack-developer/ "Site da Udemy").
 
-## Code scaffolding
+A aplicação consiste em realizar o cadastro de técnicos, clientes e ordens para criar e gerenciar ordens de serviço.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Tecnologias utilizadas
+## Back end
+- Java 11
+- Spring Boot
+- Spring Data
+- Tratamento de exceções
+- Validations
+- Padrão DTO
+- Maven
+## Front end
+- HTML5 / CSS3 / JS / TypeScript
+- Angular 11
+- Angular Material
+- Angular CLI
+- NPM
+## Implantação em produção
+- Back end: Heroku
+- Front end web: Github Pages
+- Banco de dados: H2 e MySql
 
-## Build
+# Como executar o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Back end
+Pré-requisitos: Java 11
 
-## Running unit tests
+```bash
+# clonar repositório
+git clone https://github.com/jglasner/os-api
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# executar o projeto
+./mvnw spring-boot:run
+```
 
-## Running end-to-end tests
+## Front end web
+Pré-requisitos: npm
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+# clonar repositório
+git clone https://github.com/jglasner/jglasner.github.io
 
-## Further help
+# entrar na pasta do projeto front end web
+cd os
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# instalar dependências
+npm install -g @angular/cli@11.2.7
+
+# criar projeto
+npm new os --minimal
+
+# executar o projeto
+ng serve
+
+# adicionar o framework Angular Material - Purple/Green
+npm add -g @angular/material
+
+```
+
+# Autor
+
+Jorge Glasner
+
+https://www.linkedin.com/in/jorge-glasner-709633b3/
